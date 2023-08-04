@@ -11,7 +11,7 @@ const Profile = () => {
   const token = localStorage.getItem("userToken");
   useEffect(() => {
     axios
-      .get("http://localhost:4000/userDetails", {
+      .get("https://t8jml9-4000.csb.app/userDetails", {
         headers: {
           Authorization: `Bearer ${token}`,
           Credentials: true,
